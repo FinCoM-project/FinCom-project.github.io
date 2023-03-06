@@ -1,0 +1,54 @@
+---
+title: Blog
+layout: blog
+lang: de
+description: Erfahren Sie mehr über unsere aktuellen Tätigkeiten und News.
+---
+
+<section id="mainblog">
+    <div class="container">
+        <div class="row section-title">
+            <div class="wow fadeInUp animated text-center sub-heading" data-wow-duration="600ms">
+                <h2>Blog</h2>
+                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+            </div>
+
+            <div class="text-center wow fadeInRight animated section-description" data-wow-duration="400ms">
+                <p>Read our latest news at our blog!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                {% for post in site.posts %}
+                    {% if post.tags == page.tags%}
+                    <div class="row article-row">
+                        <div class="col-md-5">
+                            <div class="row overview-img">
+                                <img src="{{ post.image | relative_url }}" alt="Team Member" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <h4>
+                                    <a href="{{post.url}}">{{post.title}}</a>
+                                    <span class="text-uppercase ml-4 special">{{post.tags}}</span>
+                                </h4>
+                            </div>
+                            <div class="row news-excerpt">
+                                {{ post.excerpt }}
+                            </div>
+                            <div class="row">
+                                <a class="post-link" href="{{post.url}}">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    {% endif %}
+                {%endfor%}
+            </div>
+            <div class="col-md-4">
+                {% include blognav.html %}
+            </div>
+        </div>
+    </div>
+</section>

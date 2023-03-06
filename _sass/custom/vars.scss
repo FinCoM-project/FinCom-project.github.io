@@ -1,0 +1,64 @@
+// ----------- COLORS -----------
+$white: #ECF4FE;
+$black: #000;
+//$primary-color: #020088;
+$primary-color: #6F8AB7;//Removed one color --> primary is secondary
+$secondary-color: #6F8AB7;
+$light-color: #E9C46A;
+$soft-color: #F4A261;
+$highlight-color: #FFBF00;
+
+
+$highlight-color-darken: darken($highlight-color, 5%);
+$grey: #ccc;
+$light-grey: lighten($grey, 5%);
+$xlight-grey: lighten($grey, 15%);
+
+$font-size-default:16px;
+$font-size-xl: 2.7em;
+$font-size-large: 2em;
+$font-size-big: 1.8em;
+$font-size-medium: 0.9em;
+$font-size-small: 0.75em;
+$font-size-tiny: 0.6em;
+
+$spacing-unit:     30px !default;
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+      @content;
+    }
+  }
+
+
+
+
+$sans-serif-font-stack: 'Roboto', 'Arial', 'sans-serif';
+
+// Source Serif Pro
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Italic.ttf");  
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Black.ttf");
+  font-weight: 900;
+}

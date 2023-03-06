@@ -1,0 +1,12 @@
+{% if page.lang == site.lang or page.lang == [] %}
+    {% assign _lang = site.lang %}
+{% else %}
+    {% assign _lang = page.lang %}
+{% endif %}
+<header id="header">
+    <div class="container header-caption">
+        <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> {{site.data.info["project-short"]}}</span>!</h2>
+        <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="highlight">{{site.data.info["initiative-hashtag"]}}</span> {{site.data.info["project-name"]}}</h3>
+        <p data-wow-duration="500ms" class="wow slideInRight animated">{{site.data.info.fue[_lang]}}</p>
+    </div>
+</header>

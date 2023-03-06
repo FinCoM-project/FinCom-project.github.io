@@ -1,0 +1,177 @@
+members:
+  - short: sfink
+    firstname: Stefan
+    lastname: Fink
+    prefix: Mag. Dr.
+    postfix:
+    position: 
+      de: Professor für Finanz- und Risikomanagement
+      en: Professor for Financial- and Risk Management
+    email: stefan.fink@fh-steyr.at
+    phone: +43 5 0804 33717
+    image: sfink.png
+  - short: ubodenhofer
+    firstname: Ulrich
+    lastname: Bodenhofer
+    prefix: FH-Prof. Univ.-Doz. DI Dr.
+    postfix:
+    position: 
+      de: Professor für Artificial Intelligence
+      en: Professor for Artificial Intelligence
+    email: ulrich.bodenhofer@fh-ooe.at
+    phone: +43 5 0804 22321
+    image: ubodenhofer.png
+  - short: mkommenda
+    firstname: Michael
+    lastname: Kommenda
+    prefix: DI(FH) Dr.
+    postfix:
+    position: 
+      de: Assistenz Professor
+      en: Assistant Professor
+    email: michael.kommenda@fh-ooe.at
+    phone: 
+    image: mkommenda.jpg
+  - short: olehner
+    firstname: Othmar
+    lastname: Lehner
+    prefix: PD Dr.
+    postfix:
+    position: 
+      de: Professor für Finanz- und Risikomanagement
+      en: Professor for Financial Risk Management
+    email: othmar.lehner@fh-ooe.at
+    phone: +43 5 0804 33714
+    image: olehner.png
+  - short: sleitner
+    firstname: Susanne
+    lastname: Leitner-Hanetseder
+    prefix: FH-Prof. MMag. Dr.
+    postfix:
+    position: 
+      de: Professorin für Financial Accounting
+      en: Professor for Financial Accounting
+    email: susanne.leitner-hanetseder@fh-steyr.at
+    phone: +43 5 0804 33716
+    image: sleitner.jpg
+  - short: lperkhofer
+    firstname: Lisa
+    lastname: Perkhofer
+    prefix: Dr.
+    postfix:
+    position: 
+      de:  Assistenz Professorin
+      en:  Assistant Professor
+    email: l.perkhofer@fh-steyr.at
+    phone: 
+    image: lperkhofer.jpg
+  - short: chaider
+    firstname: Christian
+    lastname: Haider
+    prefix:
+    postfix: MSc
+    position: 
+      de: Wissenschaftlicher Mitarbeiter
+      en: Research Associate
+    email: christian.haider@fh-hagenberg.at
+    phone: +43 50804 27193
+    image: chaider.png
+  - short: jbaumüller
+    firstname: Josef
+    lastname: Baumüller
+    prefix: Dr.
+    postfix:
+    position: 
+      de:  Post-doc
+      en:  Post-doc
+    email: l.perkhofer@fh-steyr.at
+    phone: 
+    image: jbaumueller.png
+  - short: faltendorfer
+    firstname: Fabian
+    lastname: Altendorfer
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftlicher Mitarbeiter
+      en:  Research Associate
+    email: fabian.altendorfer@fh-steyr.at
+    phone: 
+    image: faltendorfer.png
+  - short: ldarmann
+    firstname: Lydia
+    lastname: Darmann
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftliche Mitarbeiterin
+      en:  Research Associate
+    email: lydia.darmann@fh-steyr.at
+    phone: 
+    image: ldarmann.jpg
+  - short: xeisl
+    firstname: Xaver
+    lastname: Eisl
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftlicher Mitarbeiter
+      en:  Research Associate
+    email: xaver.eisl@fh-steyr.at
+    phone: 
+    image: xeisl.png
+  - short: jfurtlehner
+    firstname: Jakob
+    lastname: Furtlehner
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftlicher Mitarbeiter
+      en:  Research Associate
+    email: jakob.furtlehner@fh-steyr.at
+    phone: 
+    image: jfurtlehner.png
+  - short: tgrünsteidl
+    firstname: Theresa
+    lastname: Grünsteidl
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftliche Mitarbeiterin
+      en:  Research Associate
+    email: theresa.gruensteidl@fh-steyr.at
+    phone: 
+    image: tgruensteidl.jpg
+  - short: chofbauer
+    firstname: Christian
+    lastname: Hofbauer
+    prefix: 
+    postfix: BA
+    position: 
+      de:  Wissenschaftlicher Mitarbeiter
+      en:  Research Associate
+    email: christian.hofbauer@fh-steyr.at
+    phone: 
+    image: chofbauer.png
+  - short: ntralkovska
+    firstname: Natasha
+    lastname: Trajkovska
+    prefix: 
+    postfix: MSc
+    position: 
+      de:  Wissenschaftliche Mitarbeiterin
+      en:  Research Associate
+    email: natasha.tralkovska@fh-hagenberg.at
+    phone: 
+    image: ntralkovska.png
+  - short: sdorl
+    firstname: Sebastian
+    lastname: Dorl
+    prefix: 
+    postfix: MSc
+    position: 
+      de:  Wissenschaftlicher Mitarbeiter
+      en:  Research Associate
+    email: sebastian.dorl@fh-hagenberg.at
+    phone: 
+    image: sdorl.png

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="{{ "/assets/css/subpage.css" | relative_url }}">
+    </head>
+    <body id="page-top">
+        {% include nav.html %}
+        <section id="subpage">
+            <div class="container">
+                {{content}}
+            </div>
+        </section>
+        {% include footer.html %}
+    </body>
+    {%include foot.html%}
+</html>

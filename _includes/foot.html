@@ -1,0 +1,30 @@
+<script src="{{ "/assets/js/vendor/jquery-3.6.1.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/vendor/bootstrap.bundle.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/vendor/wow.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/vendor/leaflet.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/vendor/anchor.min.js" | relative_url }}"></script>
+
+<script src="{{ "/assets/js/custom.js" | relative_url }}"></script>
+<script>
+    var wow = new WOW ({
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       120,          // distance to the element when triggering the animation (default is 0)
+        mobile:       false,       // trigger animations on mobile devices (default is true)
+        live:         true        // act on asynchronously loaded content (default is true)
+        }
+    );
+    wow.init();
+
+
+    $(document).ready(function(){
+        $('.navbar-nav a').click(function(){
+            console.log("ASDF")
+            // remove all classes
+            $('a').removeClass('active');
+            // add class to the selected element
+            $(this).addClass('active');
+        });
+    });
+    
+</script> 

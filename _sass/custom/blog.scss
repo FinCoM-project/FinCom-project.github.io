@@ -1,0 +1,288 @@
+/**
+ * Images
+ */
+ img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .center-image {
+      margin: 0 auto;
+      display: block;
+  }
+  
+  /**
+   * Figures
+   */
+  figure > img {
+    display: block;
+  }
+  
+  figcaption {
+    font-size: $font-size-tiny;
+  }
+  
+  /**
+   * Lists
+   */
+  ul, ol {
+    margin-left: $spacing-unit;
+  }
+  
+  li {
+    > ul,
+    > ol {
+      margin-bottom: 0;
+    }
+  }
+  
+  /**
+   * Links
+   */
+  // a {
+  //   color: $brand-color;
+  //   text-decoration: none;
+  
+  //   &:visited {
+  //     color: darken($brand-color, 15%);
+  //   }
+  
+  //   &:hover {
+  //     color: $text-color;
+  //     text-decoration: underline;
+  //   }
+  // }
+  /**
+   * Links
+   */
+#blog {
+  padding-bottom:60px;
+}
+
+  #blog a {
+    color:$highlight-color;
+    text-decoration: underline;
+    &:visited {
+      color: darken($highlight-color, 15%);
+    }
+    &:hover {
+      color: darken($highlight-color, 15%);
+      text-decoration: underline;
+    }
+  }
+
+  #blog img{
+    width:100%;
+  }
+
+  
+  /**
+   * Blockquotes
+   */
+  blockquote {
+    color: $grey;
+    border-left: 4px solid $light-grey;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+  
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  
+  /**
+   * Code formatting
+   */
+  pre,
+  code {
+    font-size: 15px;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    background-color: #eef;
+  }
+  
+  code {
+    padding: 1px 5px;
+    border-radius: 0;
+  }
+  
+  pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+    border: 0;
+  
+    > code {
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
+  pre .lineno {
+    border-right: 1px solid $grey;
+  }
+  
+  /**
+   * Clearfix
+   */
+  %clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /**
+   * Icons
+   */
+  .icon > svg {
+    display: inline-block;
+    vertical-align: middle;
+  
+    path {
+      fill: $grey;
+    }
+  }
+  
+  
+  /**
+   * Posts
+   */
+  #blog{
+    position: relative;
+    top:30px;
+  }
+
+  .post-header {
+    margin-bottom: $spacing-unit;
+  }
+  
+  .post-meta {
+    margin-bottom: 10px;
+    font-size:$font-size-medium;
+    font-weight:600;
+  }
+  
+  .slash-separator:after {
+      content: '/';
+      padding: 0px 5px 0px 5px;
+  }
+  
+  .post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+  
+    @include media-query($on-laptop) {
+      font-size: 36px;
+    }
+  }
+
+  h2.post-title{
+    color:$secondary-color;
+  }
+  
+  .post-content {
+    margin-bottom: $spacing-unit;
+  
+    img {
+      //width: 100%;
+    }
+  
+    .videoframe {
+      display: inline-block;
+      margin: 0px auto 10px auto;
+      width: 100%;
+      height: 450px;
+    }
+  }
+
+  .post {
+    h4 {
+      font-size:$font-size-small;
+    }
+  }
+
+  #mainblog {
+    padding-top:80px;
+
+    hr {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  h4{
+    a {
+      font-size: 21px;
+      text-decoration: none;
+      color:$primary-color;
+    }
+
+    a:hover {
+      color:$secondary-color;
+      text-decoration: underline;
+    }
+    span {
+      position: relative;
+      font-size: 12px;
+    }
+  }
+  
+/**
+Categories
+*/
+a.category-link{
+  text-decoration: none;
+  color:#000;
+  margin:10px;
+
+  :hover {
+    background:$xlight-grey;
+  }
+}
+
+
+
+.category {
+  h4 {
+    color: $highlight-color;
+  }
+  padding:8px;
+}
+
+#navigation {
+  background-color: $secondary-color;
+  
+  .navbar {
+    max-height:60px;
+  }
+
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+
+  a.nav-link{
+    background-color: transparent;
+    border-top:1px solid transparent;
+  }
+
+  a.nav-link.active,
+  a.nav-link:focus,
+  a.nav-link:hover{
+    border-top:1px solid $highlight-color;
+    color: $highlight-color;
+  }
+
+  g#logo{
+    .cls-3 {
+      fill: #fff;
+    }
+  }
+}

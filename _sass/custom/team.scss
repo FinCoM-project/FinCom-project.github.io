@@ -1,0 +1,16 @@
+#team {
+    background: $light-grey;
+    .member {
+        width:273px;
+        position: relative;
+    }
+
+    .member h4 {
+        line-height: 24px;
+        margin: 15px 0 8px;
+    }
+
+    .member-img img{
+        max-height:290px;
+    }
+}

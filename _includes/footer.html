@@ -1,0 +1,85 @@
+{% if page.lang == site.lang or page.lang == [] %}
+    {% assign _lang = site.lang %}
+{% else %}
+    {% assign _lang = page.lang %}
+{% endif %}
+
+{%assign langurl = "/" | append: page.lang | append: "/" %}
+{% if page.url == "/" %}
+    {% capture baseurl %}/{% endcapture %}
+{% elsif langurl == "/en/"%}
+    {% capture baseurl %}{{langurl}}{% endcapture %}
+{% else %}
+    {% capture baseurl %}/{% endcapture %}
+{% endif %}
+
+
+<section id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 wow fadeInUp animated" data-wow-duration="500ms">
+                <div class="footer-logo">
+                    {% include svg/l2.svg %} 
+                </div>
+                <p>{{site.data.info.project[_lang]}}</p>
+                <p>{{site.data.info.fue[_lang]}}</p>
+                <p>{{site.data.info["address"]["street"] | append: ', ' | append: site.data.info["address"]["postal"] | append: ' ' | append: site.data.info["address"]["city"] | append: ', ' | append: site.data.info["address"]["country"]}}</p>
+                <p>{% if page.lang == "en" %}Phone:{%else%}Tel:{%endif%} {{site.data.info["phone"]}}, Fax: {{site.data.info["fax"]}}</p>
+                <p>E-Mail: {{site.data.info["mail-info"]}}</p>
+            </div>
+            <div class="col-md-3 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                <h3>Quick Links</h3>
+                <ul>
+                    {% for linkgroup in site.data.links %}
+                        {% for link in linkgroup.quicklinks %}
+                            <li><a href="{{link.path}}">{{link.name[_lang]}}</a></li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                <h3>Infos</h3>
+                <ul>
+                    {% for linkgroup in site.data.links %}
+                        {% for link in linkgroup.infolinks %}
+                            <li><a href="{{baseurl}}{{link.path[_lang]}}">{{link.name[_lang]}}</a></li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3 wow fadeInUp animated align-items-center justify-content-between" data-wow-duration="500ms" data-wow-delay="900ms">
+                <h3>Social</h3>
+                <ul class="iconlist justify-content-center">
+                    {% for linkgroup in site.data.links %}
+                        {% for link in linkgroup.sociallinks %}
+                            <li><a href="{{link.path}}"><i class="fa {{link.icon}} fa-2x"></i></a></li>
+                        {% endfor %}
+                    {% endfor %}
+                    <li class="lang-selection">
+                        {% if _lang == "de"%}
+                            <span><a href="/" class="active">DE</a></span>
+                            <span><a href="/en/">EN</a></span>
+                        {% endif %}
+                        {% if _lang == "en"%}
+                            <span><a href="/">DE</a></span>
+                            <span><a href="/en/" class="active">EN</a></span>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-disclosure">
+            <div class="col-md-3">
+                <p>&copy; 2023 | Financial Condition Monitoring</p>
+            </div>
+            <div class="col-md-9">
+                <p>
+                    The Financial Condition Monitoring project is funded by
+                    the state of Upper Austria as part of the
+                    #upperVision2030 program. For more information,
+                    visit <a href="{{site.data.links.uppervision}}">www.uppervision.at</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

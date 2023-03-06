@@ -1,0 +1,42 @@
+#navigation {
+    background-color: rgba($secondary-color, 1.0);
+    border-bottom: 2px solid darken($primary-color, 15%);
+    margin: 0;
+    -webkit-transition: background-color 800ms linear;
+        -moz-transition: background-color 800ms linear;
+        -ms-transition: background-color 800ms linear;
+          -o-transition: background-color 800ms linear;
+            transition: background-color 800ms linear;
+    
+    .navbar {
+      max-height:60px;
+    }
+
+    .navbar-brand {
+      height:60px;
+
+
+      svg{
+        width: 220px;
+      }
+    }
+
+    a{
+      color: $white;
+      text-decoration: none;
+    }
+
+    a.nav-link{
+      background-color: transparent;
+      border-top:1px solid transparent;
+    }
+
+    a.nav-link.active,
+    a.nav-link:focus,
+    a.nav-link:hover{
+      border-top:1px solid $highlight-color;
+      color: $highlight-color;
+    }
+  }
+
+  

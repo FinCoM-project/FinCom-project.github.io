@@ -1,0 +1,70 @@
+#header{
+    height: 100vh;
+    width:100%;
+    
+    background:
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), 
+    url(../../assets/img/stock_bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-caption{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-caption h2 {
+    color:$white;
+    font-size: 4.5em;
+    font-weight: 900;
+
+    span {
+        font-size:1em;
+    }
+}
+
+  
+.header-caption h3 {
+    font-size: 48px;
+    font-weight: 300;
+    color:$white;
+
+    span{
+        font-size:0.8em;
+    }
+}
+
+  
+.header-caption p {
+    color: $white;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.header-caption p:before,
+.header-caption p:after {
+    color: $primary-color;
+    content: "___";
+    position: relative;
+    top: -8px;
+}
+
+.header-caption p:before {
+    right: 20px;
+}
+
+.header-caption p:after {
+    left: 20px;
+}

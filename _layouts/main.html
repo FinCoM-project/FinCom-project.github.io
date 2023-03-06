@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <head>
+        {% include head.html %}
+    </head>
+    <body id="page-top">
+        {% include nav.html %}
+        {% include header.html%}
+        {{content}}
+        {% include footer.html %}
+    </body>
+    {%include foot.html%}
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 200) {
+                $("#navigation").css("background-color","#6F8AB7");
+            } else {
+                $("#navigation").css("background-color","rgba(111, 138, 183, 0.2)");
+            }
+        });
+    </script>
+</html>

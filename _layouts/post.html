@@ -1,0 +1,34 @@
+---
+layout: blog
+---
+
+<section id="blog">
+<div class="container text-justify">
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h4><a href="/blog">Blog</a>
+    <span class="slash-separator"></span>
+    {% for t in page.tags %}
+      <a href="/blog/{{ t | downcase }}">{{ t }}</a> 
+    {% endfor %}
+    </h4>
+    <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+    <p class="post-meta">
+        {% assign m = page.date | date: "%-m" | minus: 1 %}
+        <time class="date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d" }}.{{ page.date | date: "%-m" }}.{{ page.date | date: "%-Y" }}</time>
+        <span class="slash-separator"></span>
+        <span class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">{{ page.author }}</span>
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
+</div>
+</section>

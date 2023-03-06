@@ -1,0 +1,36 @@
+---
+title: Sitemap
+layout: subpage
+lang: en
+permalink: en/sitemap/
+description: Linkliste zu allen Inhalten dieser Webseite
+---
+
+<h1>Sitemap</h1>
+<br/>
+<h4>Starting Page</h4>
+<ul class="dash">
+    {% for item in site.data.nav %}
+        {% if item.hardlink == false %}
+        <li><a href="/{{page.lang}}/{{item['link']}}">{{item[page.lang]}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<br/>
+<h4>Sub Sites</h4>
+<ul class="dash">
+    {% for item in site.data.nav %}
+        {% if item.hardlink == true %}
+        <li><a href="/{{item['link']}}">{{item[page.lang]}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<br/>
+<h4>Information Sites</h4>
+<ul class="dash">
+    {% for link in site.data.links %}
+        {% for info in link.infolinks %}
+            <li><a href="/{{page.lang}}/{{info.path[page.lang]}}">{{info.name[page.lang]}}</a></li>
+        {% endfor %}
+    {% endfor %}
+</ul>

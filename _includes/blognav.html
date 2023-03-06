@@ -1,0 +1,14 @@
+<h1>Categories</h1>
+
+<nav class="blog-side-nav">
+    {% assign cats = (site.category | sort: 'rank') %}
+    {% for cat in cats%}
+
+    <a class="category-link" href="{{cat.link}}">
+        <div class="category">
+            <h4>{{cat.tag}}</h4>
+            <p>{{cat.description}}</p>
+        </div>
+    </a>
+    {% endfor %}
+</nav>

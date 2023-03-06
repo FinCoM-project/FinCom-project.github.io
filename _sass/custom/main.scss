@@ -1,0 +1,118 @@
+* {
+  padding:0;
+  margin:0;
+  outline: none;
+  font-family:$sans-serif-font-stack;
+  font-size:$font-size-default;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color:$secondary-color;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight:900;
+  font-size:$font-size-xl;
+}
+
+h1 {
+  color:$primary-color;
+}
+
+h4 {
+  font-size:1.4em;
+  font-weight:600;
+  color:$secondary-color;
+}
+
+a {
+  color:$primary-color;
+}
+
+a.active {
+  color:$highlight-color;
+}
+
+a:hover{
+  color:$secondary-color;
+}
+
+.highlight {
+  color:$highlight-color;
+}
+
+.special {
+  color:$highlight-color;
+}
+
+section {
+  padding-block: 70px;
+}
+
+#contactMap {
+  padding-top: 30px;
+}
+
+section#team, section#news, section#project {
+  padding-bottom:35px;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  h2 {
+    color:$primary-color;
+    font-weight:900;
+  }
+}
+
+.section-description {
+  color:$secondary-color;
+  font-style:italic;
+}
+
+.section-title {
+  padding-bottom:60px;
+}
+
+.devider {
+  color: $secondary-color;
+}
+
+.devider::before, .devider:after{
+  position: relative;
+  color: $secondary-color;
+  content: '________________';
+  top:-6px;
+}
+
+.devider:before {
+  right: 15px;
+}
+
+.devider:after {
+  left: 15px;
+}
+
+.pad-bottom-40{
+  padding-bottom: 40px;
+}
+
+.fincom-logo {
+  position:relative;
+  height:40px;
+  top:5px;
+
+  .letter {
+    fill:#fff;
+  }
+
+  .circle {
+    stroke:#fff;
+  }
+}
+

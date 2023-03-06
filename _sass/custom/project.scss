@@ -1,0 +1,30 @@
+#project{
+  background: $light-grey;
+
+  .title-column {
+    background:$primary-color;
+    h3{
+      color: $white;
+      font-weight:600;
+      font-size:$font-size-large;
+    }
+  }
+
+  .project-img{
+    max-width:80px;
+    max-height:80px;
+  }
+
+  .project-title-row{
+    padding-top:15px;
+  }
+
+  .project-desc-row{
+    padding-top:25px;
+    padding-bottom:15px;
+  }
+
+  .project-desc-column{
+    padding-left:25px;
+  }
+}
