@@ -4,7 +4,7 @@ lang: de
 title: "Strategiemeeting 2023"
 description: Das Strategiemeeting 2023 mit allen Projektpartnern wurde in Steyr abgehalten
 keywords: meetings
-date: 2023-27-04 11:00:00 +0200
+date: 2023-04-27 11:00:00 +0200
 tags: "Dissemination"
 author: gkronber
 image: /blog/resources/2023-04-27/fincom-team.jpg
@@ -15,5 +15,3 @@ Im vergangenen Jahr 2022 wurden Daten gesammelt und vorbereitet, diese Aktivitä
 Im aktuellen Jahr können wir auf Basis der gesammelten Daten erste Modelle für die Ausfallswahrscheinlichkeit (probability of default) bilden und analysieren.
 
 Mehrere Unterteams werden parallel an Modellen für die Mikroebene und die Makroebene arbeiten.
-
-
